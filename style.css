@@ -1,7 +1,9 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: rgba(180, 171, 219, 0.877);
 }
+
 
 header {
     background: #943126;
@@ -19,16 +21,56 @@ header {
     padding: 10px 20px;
 }
 
+#main_header {
+    border: none; 
+    font-size: 14;
+    align-self: center;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
+
   }
 
   nav li {
     text-align: center;
     flex-grow: 1;
   }
+
+  #name_input {
+   
+  }
+
   
+  h2 {
+    text-align: center;
+
+  }
+
+  h3 {
+    text-align: center;
+
+  }
+
+  #ul_overview {
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  #unisa_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  p {
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
