@@ -8,3 +8,14 @@ function toggleTheme() {
   }
 }
 
+// Function to display the current date and time in the specified element
+function displayDateTime() {
+    const dateTimeElement = document.getElementById('dateTime');
+    if (dateTimeElement) {
+        const now = new Date();
+        dateTimeElement.textContent = `Current Date and Time: ${now.toLocaleString()}`;
+    }
+}
+
+// Run displayDateTime when the page loads
+document.addEventListener('DOMContentLoaded', displayDateTime);
