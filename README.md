@@ -28,7 +28,7 @@ A structured website project that showcases my first-year experiences at the Uni
 ## How to Install and Run the Project
 
 1. **Clone this repository**:
-   ```bash
+   
    git clone https://github.com/UniSA-STEM/assignment-2-web-page-YDILSH.git
 
    Open the project: Navigate to the project folder, then open My First Year at UniSA.html in your preferred web browser to view the home page
