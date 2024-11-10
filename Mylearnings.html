@@ -1,83 +1,85 @@
 <!DOCTYPE html>
-<html>  
-<head>
+<html>
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>My Learnings</title>
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="learnings.css" />
+  </head>
+  <body>
+    <!-- Header with Navigation -->
+    <header>
+      <h1>My First Year at UniSA</h1>
+      <button onclick="" id="theme_btn">Toggle Theme</button>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="My First Year at UniSA.html">Home</a></li>
+        <li><a href="Mylearnings.html">My Learnings</a></li>
+        <li><a href="#">Interests</a></li>
+        <li><a href="#">Learning Goals</a></li>
+      </ul>
+      <form class="name_input">
+        <input type="text" name="user_name" placeholder="Enter your name!" />
+        <button type="submit">Apply!</button>
+      </form>
+    </nav>
 
-<!--set the webpage width to device width-->    
-<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <main>
+      <!--Adding unisa image and connect it to unisa webpage-->
+      <a href="https://study.unisa.edu.au/" target="_blank">
+        <img src="Unisa.jpg" alt="Picture of UnisA" id="unisa_img" />
+      </a>
 
-<title>	My First Year at UniSA</title> 
+      <article>
+        <h2>Courses I'm Learning</h2>
+        <section>
+          <h3>Course 1: Networking Fundamentals</h3>
+          <p>
+            This course introduces the basic concepts of computer networking.
+            Topics include network topologies, protocols, and devices like
+            routers and switches. You'll learn how data is transferred across
+            networks, understand the OSI model, and configure basic network
+            settings. Key skills developed include setting up a home network,
+            troubleshooting connectivity issues, and understanding network
+            security fundamentals.
+          </p>
+        </section>
+        <section>
+          <h3>Course 2: Cyber Security Basics</h3>
+          <p>
+            This course covers the foundational principles of cybersecurity,
+            focusing on protecting systems and networks from cyber threats.
+            Topics include encryption, firewalls, malware, and risk management.
+            You'll learn about common attack methods like phishing and
+            denial-of-service attacks, and how to implement basic security
+            measures. Key skills developed include securing personal devices,
+            understanding security protocols, and identifying potential threats
+            to systems.
+          </p>
+        </section>
+        <section>
+          <h3>Course 3: Introduction to Programming</h3>
+          <p>
+            This course provides an introduction to programming using Python.
+            You will learn how to write basic programs, use variables and data
+            types, and work with control structures like loops and conditionals.
+            Topics also include functions, file I/O, and debugging. Key skills
+            developed include problem-solving through coding, understanding
+            algorithms, and gaining a foundation for learning more advanced
+            programming concepts.
+          </p>
+        </section>
+        <!-- Additional sections for each course -->
+      </article>
+    </main>
 
-<!--Linking the external css-->
-<link rel="stylesheet" href="common.css">
-<link rel="stylesheet" href="learnings.css">
-
-<script>
-</script>  
-</head>  
-
-<body>
-
-<!--Header including Navi-bar-->
-<header> 
-<h1>My First Year at UniSA</h1>    
-<button onclick="" id="theme_btn">Toggle Theme</button>
-</header> 
-
-<!--Navigation Bar-->
-<nav> 
-<ul>  
- <li><a href="My First Year at UniSA.html">Home</a></li>
- <li><a href="Mylearnings.html">My learnings</a></li>       
- <li><a href="#">Interests</a></li>        
- <li><a href="#">Learning Goals</a></li>           
-</ul>       
-<form><input type="text" name="user_name" placeholder="Enter your name!"> <button type="submit">Apply!</button>     
-</form>    
-</nav>    
-
-<main> 
-<article> 
-    <h2>Who I'm I?</h2> 
-
-<p> Hello! I'm Yasindu Dilshan, and I'm currently pursuing a Bachelor of Science in Information Technology, 
-    specializing in Networking and Cyber Security, at the University of South Australia. My first year at 
-    UniSA has been an exciting journey filled with new challenges and opportunities for growth.</p>        
-
-<h3>Degree overview</h3>    
-
-<ul>
-    <li>No.1 in SA for graduate skills in I.T.1.</li>
-    <li>Benefit from contemporary curriculum informed by UniSA research in areas such as cyber security, 
-        augmented reality and data analytics.</li>
-    <li>Learn from dedicated, highly experienced teaching staff including practitioners 
-        employed in industry.</li>
-    <li>Develop the skills to support a network roll-out and maintenance.</li>
-    <li>Learn using the latest industry software and technology.</li>
-    <li>Prepare for industry (Cisco) certification exams including Cisco-Certified 
-        Network Associate (CCNA) and Cisco-Certified Network Professional (CCNP).</li>
-</ul>
-
-<h3>About UniSa</h3>
-
-<!--Adding unisa image and connect it to unisa webpage-->
-<a href="https://study.unisa.edu.au/" target="_blank">
-<img src="Unisa.jpg" alt="Picture of UnisA" id="unisa_img"> </a>
-
-<p>The University of South Australia is Australia's University of Enterprise on the global stage, 
-    agile and astute, known for relevance, equity and excellence.</p>        
-
-<p>We educate and prepare global learners from all backgrounds, instilling professional skills and knowledge,
-     and capacity and drive for lifelong learning.<br>We undertake research that is inspired by global 
-     challenges and opportunities, delivers economic and social benefits, and which informs our teaching.<br>
-     We operate through a partnered, end-user informed culture of teaching and research with a commitment 
-     to outstanding service, continuous improvement and sustainability.
-</p>      
-
-</article>      
-
-<!--Footer-->
-<footer>   <p>©Copyright 2024 by <Inset Yasindu Dilshan> All rights reversed.</p>    </footer>  
-
-</body>
+    <footer>
+      <p>© 2024 by Yasindu Dilshan. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
-
