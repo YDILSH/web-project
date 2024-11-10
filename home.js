@@ -2,15 +2,15 @@ function changeImage(imageType) {
   var imgElement = document.getElementById("displayed-image");
   var pElement = document.getElementById("image-description");
 
-  if (imageType === "logo") {
+  if (imageType === "Unisa logo") {
     imgElement.src = "images/logo.png";
     imgElement.alt = "logo of UniSA";
     pElement.innerHTML =
       'The official logo of the University of South Australia,<a href="https://commons.wikimedia.org/wiki/File:Logo-unisa-portrait-blue.svg" target="_blank">here</a>';
-  } else if (imageType === "modern architecture") {
-    imgElement.src = "images/modern architecture.png";
-    imgElement.alt = "modern architecture of UniSA";
+  } else if (imageType === "Usasa Logo") {
+    imgElement.src = "images/usasa_logo.png";
+    imgElement.alt = "Logo of USASA";
     pElement.innerHTML =
-      ': A photograph showcasing the modern architecture of the University of South Australia <a href="https://commons.wikimedia.org/wiki/File:University_of_South_Australia,_School_of_Mines,_North_Terrace,_Adelaide,_South_Australia.jpg" target="_blank">here</a>.';
+      'The official logo of the University of South Australia Student Association <a href="https://studentexperiencenetwork.com.au/wp-content/uploads/1632189955-499449981-USASA_logo_webresolution.png" target="_blank">here</a>.';
   }
 }

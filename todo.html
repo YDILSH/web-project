@@ -9,13 +9,29 @@
 <body>
   <header>
     <h1>My Learning Goals</h1>
-    <button onclick="logout()">Logout</button>
+    <button onclick="toggleTheme()" id="theme_btn">Toggle Theme</button>
   </header>
 
+   <!-- Navigation Bar -->
+   <div id="navi_bar">
+    <nav>
+      <ul>
+        <li><a href="My First Year at UniSA.html">Home</a></li>
+        <li><a href="Mylearnings.html">My Learnings</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <li><a href="Learning Goals.html">Learning Goals</a></li>
+        <li><a href="todo.html">Todo list</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <p id="dateTime"></p>
+  
   <section id="password-section">
     <h2>Enter the Password to Access Your Learning Goals</h2>
     <input type="password" id="password-input" placeholder="Enter password">
     <button onclick="checkPassword()">Submit</button>
+    <button onclick="logout()">Logout</button>
   </section>
 
   <section id="todo-section" style="display:none;">
@@ -29,5 +45,7 @@
   </section>
 
   <script src="todo.js"></script>
+  <script src="common.js"></script>
+    <script src="home.js"></script>
 </body>
 </html>

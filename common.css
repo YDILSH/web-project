@@ -26,13 +26,17 @@ nav ul {
     justify-content: center;
 }
 
+nav ul li a {
+  text-decoration: none;
+}
+
 nav li {
     text-align: center;
     flex-grow: 1;
     font-size: 150%;
 }
 
-h2, h3 {
+h1, h2, h3 {
     text-align: center;
 }
 
@@ -57,11 +61,11 @@ footer {
 
 /* Default Light Theme */
 :root {
-  --primary-color: rgb(255, 255, 255); 
-  --secondary-color: rgb(220, 220, 220); 
-  --bg-color: rgb(240, 240, 240); 
+  --primary-color: rgb(129, 129, 255); 
+  --secondary-color: rgb(86, 86, 199); 
+  --bg-color: rgb(162, 162, 255); 
   --font-color: black; 
-  --heading-color: rgb(40, 40, 40); 
+  --heading-color: rgb(87, 16, 44); 
 }
 
 /* Dark Theme */
