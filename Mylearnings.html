@@ -23,14 +23,19 @@
         <li><a href="#">Interests</a></li>
         <li><a href="#">Learning Goals</a></li>
       </ul>
-      <form class="name_input">
-        <input type="text" name="user_name" placeholder="Enter your name!" />
+      <form class="name_input" onsubmit="handleForm(event)">
+        <input
+          type="text"
+          id="user_name"
+          name="user_name"
+          placeholder="Enter your name!"
+        />
         <button type="submit">Apply!</button>
       </form>
     </nav>
 
     <main>
-        <p id="dateTime"></p>
+      <p id="dateTime"></p>
       <!--Adding unisa image and connect it to unisa webpage-->
       <a href="https://study.unisa.edu.au/" target="_blank">
         <img src="Unisa.jpg" alt="Picture of UnisA" id="unisa_img" />
@@ -66,8 +71,8 @@
         <section>
           <h3>Course 3: Introduction to Programming</h3>
           <p>
-            This course provides an introduction to programming using Python.
-            I will learn how to write basic programs, use variables and data
+            This course provides an introduction to programming using Python. I
+            will learn how to write basic programs, use variables and data
             types, and work with control structures like loops and conditionals.
             Topics also include functions, file I/O, and debugging. Key skills
             developed include problem-solving through coding, understanding
@@ -78,7 +83,7 @@
         <!-- Additional sections for each course -->
       </article>
     </main>
-     <script src="common.js"></script>
+    <script src="common.js"></script>
     <footer>
       <p>© 2024 by Yasindu Dilshan. All rights reserved.</p>
     </footer>

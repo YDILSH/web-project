@@ -34,13 +34,18 @@
     </div>
 
     <!-- Name input form -->
-    <form class="name_input">
-      <input type="text" name="user_name" placeholder="Enter your name!" />
+    <form class="name_input" onsubmit="handleForm(event)">
+      <input
+        type="text"
+        id="user_name"
+        name="user_name"
+        placeholder="Enter your name!"
+      />
       <button type="submit">Apply!</button>
     </form>
 
     <main>
-        <p id="dateTime"></p>
+      <p id="dateTime"></p>
       <article>
         <!-- About Me -->
         <h2>Who Am I?</h2>

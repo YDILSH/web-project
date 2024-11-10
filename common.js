@@ -19,3 +19,15 @@ function displayDateTime() {
 
 // Run displayDateTime when the page loads
 document.addEventListener('DOMContentLoaded', displayDateTime);
+
+// Function to read query string and display user's name in heading
+function updateHeadingWithUserName() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const userName = urlParams.get('user_name');
+  if (userName) {
+    const headerElement = document.getElementById('main_header');
+    headerElement.textContent = `Hello, ${userName}`;
+  }
+}
+
+
