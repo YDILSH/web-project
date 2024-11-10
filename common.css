@@ -1,12 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgba(180, 171, 219, 0.877);
+  
 }
 
 header {
-    background: #943126;
-    color: white;
+    
     padding: 1% 2%;
     display: flex;
     justify-content: space-between;
@@ -53,6 +52,37 @@ p {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #943126;
-    color: white;
+   
+}
+
+/* Default Light Theme */
+:root {
+  --primary-color: rgb(255, 255, 255); 
+  --secondary-color: rgb(220, 220, 220); 
+  --bg-color: rgb(240, 240, 240); 
+  --font-color: black; 
+  --heading-color: rgb(40, 40, 40); 
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --primary-color: rgb(0, 0, 0); 
+  --secondary-color: rgb(40, 40, 40);
+  --bg-color: rgb(30, 30, 30); 
+  --font-color: white; 
+  --heading-color: rgb(255, 255, 255); 
+}
+
+/* Apply variables throughout the page */
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+header, footer {
+  background-color: var(--secondary-color);
+}
+
+h1, h2, h3 {
+  color: var(--heading-color);
 }

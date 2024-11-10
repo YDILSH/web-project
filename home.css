@@ -26,7 +26,7 @@ nav ul li a:hover {
 }
 
 #image-buttons-container button {
-  background-color: #0078d4; /* UniSA blue color */
+  background-color: #0078d4; 
   color: white;
   border: none;
   padding: 10px 20px;
@@ -37,7 +37,7 @@ nav ul li a:hover {
 }
 
 #image-buttons-container button:hover {
-  background-color: #005fa3; /* Darker shade of blue */
+  background-color: #005fa3; 
   transform: scale(1.1);
 }
 
@@ -46,7 +46,7 @@ nav ul li a:hover {
   width: 100%;
   max-width: 500px;
   height: auto;
-  border: 3px solid #0078d4; /* Blue border around the image */
+  border: 3px solid #0078d4; 
   border-radius: 10px;
   margin: 20px auto; /* Center the image */
   display: block; /* Make the image block-level for centering */
