@@ -30,4 +30,7 @@ function updateHeadingWithUserName() {
   }
 }
 
+// Call updateHeadingWithUserName function on page load
+window.onload = updateHeadingWithUserName;
+
 
