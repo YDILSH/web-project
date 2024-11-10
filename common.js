@@ -33,4 +33,15 @@ function updateHeadingWithUserName() {
 // Call updateHeadingWithUserName function on page load
 window.onload = updateHeadingWithUserName;
 
+// Function to read and apply theme from local storage
+function applyStoredTheme() {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme === "dark") {
+        document.body.classList.add("dark-theme");
+    } else {
+        document.body.classList.remove("dark-theme");
+    }
+}
+
+
 
