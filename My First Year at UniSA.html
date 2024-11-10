@@ -8,7 +8,9 @@
 <title>	My First Year at UniSA</title> 
 
 <!--Linking the external css-->
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="home.css">
+
 <script>
 </script>  
 </head>  
@@ -22,13 +24,16 @@
 </header> 
 
 <!--Navigation Bar-->
+<div id="navi_bar">
 <nav> 
 <ul>  
  <li><a href="My First Year at UniSA.html">Home</a></li>
  <li><a href="Mylearnings.html">My learnings</a></li>       
  <li><a href="#">Interests</a></li>        
  <li><a href="#">Learning Goals</a></li>           
-</ul>       
+</ul>   
+</div>    
+
 <form class="name_input"><input type="text" name="user_name" placeholder="Enter your name!"> <button type="submit">Apply!</button>     
 </form>    
 </nav>    
@@ -43,6 +48,7 @@
 
 <h3>Degree overview</h3>    
 
+<div id="div_overview">
 <ul id="ul_overview">
     <li>No.1 in SA for graduate skills in I.T.1.</li>
     <li>Benefit from contemporary curriculum informed by UniSA research in areas such as cyber security, 
@@ -54,7 +60,7 @@
     <li>Prepare for industry (Cisco) certification exams including Cisco-Certified 
         Network Associate (CCNA) and Cisco-Certified Network Professional (CCNP).</li>
 </ul>
-
+</div>
 <h3>About UniSa</h3>
 
 <!--Adding unisa image and connect it to unisa webpage-->
@@ -74,7 +80,9 @@
 </article>      
 
 <!--Footer-->
+<div id="div_footer">
 <footer>   <p>©Copyright 2024 by <Inset Yasindu Dilshan> All rights reversed.</p>    </footer>  
+</div>
 
 </body>
 </html>

@@ -1,0 +1,14 @@
+/* for My First Year at UniSA page */
+#main_header {
+    font-size: 2em;
+    text-align: center;
+}
+
+#div_overview {
+    text-align: center;
+}
+
+#ul_overview {
+    display: inline-block;
+    text-align: left;
+}
