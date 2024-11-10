@@ -43,5 +43,11 @@ function applyStoredTheme() {
     }
 }
 
+// Function to toggle theme and save preference in local storage
+function toggleTheme() {
+    const isDarkTheme = document.body.classList.toggle("dark-theme");
+    localStorage.setItem("theme", isDarkTheme ? "dark" : "light");
+}
+
 
 
