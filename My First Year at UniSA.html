@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--set the webpage width to device width-->
+    <!-- Set the webpage width to device width -->
     <meta
       charset="utf-8"
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-
     <title>My First Year at UniSA</title>
 
-    <!--Linking the external css-->
+    <!-- Linking the external CSS -->
     <link rel="stylesheet" href="common.css" />
     <link rel="stylesheet" href="home.css" />
-
     <script></script>
   </head>
 
   <body>
-    <!--Header including Nav-bar-->
     <header>
       <h1 id="main_header">My First Year at UniSA</h1>
       <button onclick="" id="theme_btn">Toggle Theme</button>
     </header>
 
-    <!--Navigation Bar-->
+    <!-- Navigation Bar -->
     <div id="navi_bar">
       <nav>
         <ul>
           <li><a href="My First Year at UniSA.html">Home</a></li>
-          <li><a href="Mylearnings.html">My learnings</a></li>
+          <li><a href="Mylearnings.html">My Learnings</a></li>
           <li><a href="#">Interests</a></li>
           <li><a href="#">Learning Goals</a></li>
         </ul>
       </nav>
     </div>
 
+    <!-- Name input form -->
     <form class="name_input">
       <input type="text" name="user_name" placeholder="Enter your name!" />
       <button type="submit">Apply!</button>
@@ -43,7 +41,8 @@
 
     <main>
       <article>
-        <h2>Who I'm I?</h2>
+        <!-- About Me -->
+        <h2>Who Am I?</h2>
 
         <p>
           Hello! I'm Yasindu Dilshan, and I'm currently pursuing a Bachelor of
@@ -53,18 +52,18 @@
           opportunities for growth.
         </p>
 
-        <h3>Degree overview</h3>
+        <h3>Degree Overview</h3>
 
         <div id="div_overview">
           <ul id="ul_overview">
             <li>No.1 in SA for graduate skills in I.T.1.</li>
             <li>
               Benefit from contemporary curriculum informed by UniSA research in
-              areas such as cyber security, augmented reality and data
+              areas such as cyber security, augmented reality, and data
               analytics.
             </li>
             <li>
-              Learn from dedicated, highly experienced teaching staff including
+              Learn from dedicated, highly experienced teaching staff, including
               practitioners employed in industry.
             </li>
             <li>
@@ -78,17 +77,18 @@
             </li>
           </ul>
         </div>
-        <h3>About UniSa</h3>
 
-        <!--Adding unisa image and connect it to unisa webpage-->
+        <h3>About UniSA</h3>
+
+        <!-- Adding UniSA image and connecting it to UniSA webpage -->
         <a href="https://study.unisa.edu.au/" target="_blank">
-          <img src="Unisa.jpg" alt="Picture of UnisA" id="unisa_img" />
+          <img src="images/Unisa.jpg" alt="Picture of UniSA" id="unisa_img" />
         </a>
 
         <p>
           The University of South Australia is Australia's University of
           Enterprise on the global stage, agile and astute, known for relevance,
-          equity and excellence.
+          equity, and excellence.
         </p>
 
         <p>
@@ -99,14 +99,44 @@
           benefits, and which informs our teaching.<br />
           We operate through a partnered, end-user informed culture of teaching
           and research with a commitment to outstanding service, continuous
-          improvement and sustainability.
+          improvement, and sustainability.
         </p>
       </article>
+
+      <!-- Adding Image Buttons -->
+      <h3>Choose an Image</h3>
+      <img id="displayed-image" src="images/logo.png" alt="Default Image logo of UniSA" />
+      <p id="image-description">No image selected yet.</p>
+      <div id="image-buttons-container">
+        <button onclick="changeImage('logo')">logo</button>
+        <button onclick="changeImage('modern architecture')">
+          modern architecture
+        </button>
+      </div>
     </main>
 
-    <!--Footer-->
+    <!-- Footer -->
     <div id="div_footer">
       <footer><p>©Copyright 2024 by All rights reserved.</p></footer>
     </div>
+
+    <script>
+      function changeImage(imageType) {
+        var imgElement = document.getElementById("displayed-image");
+        var pElement = document.getElementById("image-description");
+
+        if (imageType === "logo") {
+          imgElement.src = "images/logo.png";
+          imgElement.alt = "logo of UniSA";
+          pElement.innerHTML =
+            'The official logo of the University of South Australia,<a href="https://commons.wikimedia.org/wiki/File:Logo-unisa-portrait-blue.svg" target="_blank">here</a>';
+        } else if (imageType === "modern architecture") {
+          imgElement.src = "images/modern architecture.png";
+          imgElement.alt = "modern architecture of UniSA";
+          pElement.innerHTML =
+            ': A photograph showcasing the modern architecture of the University of South Australia <a href="https://commons.wikimedia.org/wiki/File:University_of_South_Australia,_School_of_Mines,_North_Terrace,_Adelaide,_South_Australia.jpg" target="_blank">here</a>.';
+        }
+      }
+    </script>
   </body>
 </html>

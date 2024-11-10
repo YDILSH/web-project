@@ -16,3 +16,67 @@
 nav ul li a:hover {
     color: #b3d1ff; 
 }
+
+/* Center the image and buttons */
+#image-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+#image-buttons-container button {
+  background-color: #0078d4; /* UniSA blue color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#image-buttons-container button:hover {
+  background-color: #005fa3; /* Darker shade of blue */
+  transform: scale(1.1);
+}
+
+/* Center the displayed image */
+#displayed-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border: 3px solid #0078d4; /* Blue border around the image */
+  border-radius: 10px;
+  margin: 20px auto; /* Center the image */
+  display: block; /* Make the image block-level for centering */
+  transition: transform 0.3s ease-in-out;
+}
+
+#displayed-image:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Styling for the image description */
+#image-description {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+}
+
+#image-description a {
+  color: #0078d4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#image-description a:hover {
+  text-decoration: underline;
+}
+
+
+#div_footer {
+  margin-top: 40px; 
+}
+
