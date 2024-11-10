@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Goals - To-Do List</title>
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+  <header>
+    <h1>My Learning Goals</h1>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <section id="password-section">
+    <h2>Enter the Password to Access Your Learning Goals</h2>
+    <input type="password" id="password-input" placeholder="Enter password">
+    <button onclick="checkPassword()">Submit</button>
+  </section>
+
+  <section id="todo-section" style="display:none;">
+    <h3>My To-Do List</h3>
+    <input type="text" id="todo-input" placeholder="Add a learning goal">
+    <button onclick="addItem()">Add Item</button>
+    <button onclick="saveList()">Save List</button>
+    <button onclick="loadList()">Load List</button>
+
+    <ul id="todo-list"></ul>
+  </section>
+
+  <script src="todo.js"></script>
+</body>
+</html>
